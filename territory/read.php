@@ -34,10 +34,10 @@ if($num > 0)
         extract($row);
   
         $territory_item = array(
-            "id_territory" => $id_territory,
-            "territory_name" => $territory_name,
-            "id_continent" => $id_continent,
-            "continent_name" => $continent_name
+            "id_territory" => $ID_TERRITORY,
+            "territory_name" => $TERRITORY_NAME,
+            "id_continent" => $ID_CONTINENT,
+            "continent_name" => $CONTINENT_NAME
         );
   
         array_push($territory_arr["territories"], $territory_item);

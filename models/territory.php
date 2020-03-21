@@ -18,7 +18,7 @@ class Territory
     public function read()
     { 
         // Select all query
-        $query = "SELECT * FROM " . $this->table_name . " ORDER BY ID_TERRITORY DESC";
+        $query = "SELECT * FROM " . $this->table_name . " ORDER BY ID_TERRITORY ASC";
         // Prepare query statement
         $stmt = $this->handle->prepare($query);
         // Execute query

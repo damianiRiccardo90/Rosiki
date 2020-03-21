@@ -9,7 +9,7 @@ include_once '../config/db-handle.php';
 include_once '../models/territory.php';
   
 // Instantiate database and product object
-$db_handle = new DBHandle()->get();
+$db_handle = (new DBHandle())->get();
   
 // Initialize object
 $territory = new Territory($db_handle);

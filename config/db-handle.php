@@ -4,8 +4,8 @@ class DBHandle
 {
     // Credentials
     private $host = "localhost";
-    private $db_name = "damianir-rosiki";
-    private $username = "damianir-admin";
+    private $db_name = "damianir_rosiki";
+    private $username = "damianir_admin";
     private $password = "praythesun";
     public $handle;
 

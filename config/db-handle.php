@@ -7,21 +7,21 @@ class DBHandle
     private $db_name = "damianir-rosiki";
     private $username = "damianir-admin";
     private $password = "praythesun";
-    public $conn;
+    public $handle;
 
     public function get()
     {
-        $this->conn = null;
+        $this->handle = null;
         try
         {
-            $this->conn = new PDO("mysql:host=" . $this->host . ";dbname=" . $this->db_name, $this->username, $this->password);
-            $this->conn->exec("set names utf8");
+            $this->handle = new PDO("mysql:host=" . $this->host . ";dbname=" . $this->db_name, $this->username, $this->password);
+            $this->handle->exec("set names utf8");
         }
         catch(PDOException $exception)
         {
-            echo "Database connection error: " . $exception->getMessage();
+            echo "Database handleection error: " . $exception->getMessage();
         }
-        return $this->conn;
+        return $this->handle;
     }
 }
 

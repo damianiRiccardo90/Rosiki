@@ -56,7 +56,7 @@ else
   
     // Tell the user no products found
     echo json_encode(
-        array("message" => "No products found.")
+        array("message" => "No territory found.")
     );
 }
 

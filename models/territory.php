@@ -3,7 +3,7 @@
 class Territory 
 {
     private $handle;
-    private $table_name = "Territory";
+    private $table_name = "TERRITORY";
   
     public $id_territory;
     public $territory_name;

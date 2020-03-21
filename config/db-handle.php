@@ -19,7 +19,7 @@ class DBHandle
         }
         catch(PDOException $exception)
         {
-            echo "Database handleection error: " . $exception->getMessage();
+            echo "Database connection error: " . $exception->getMessage();
         }
         return $this->handle;
     }

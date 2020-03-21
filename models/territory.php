@@ -20,7 +20,7 @@ class Territory
         // Select all query
         $query = "SELECT * FROM " . $this->table_name . " ORDER BY ID_TERRITORY DESC";
         // Prepare query statement
-        $stmt = $this->conn->prepare($query);
+        $stmt = $this->handle->prepare($query);
         // Execute query
         $stmt->execute();
     
